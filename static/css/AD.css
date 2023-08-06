@@ -1,0 +1,20 @@
+.AD-btn {
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  box-shadow: 1px 1px 2px gray;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+.AD-btn:hover {
+  box-shadow: none;
+  background-color: rgb(168, 28, 168);
+}
+
+.AD-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=AD.css.map */
