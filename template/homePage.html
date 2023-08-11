@@ -4,33 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Fancy Town</title>
-    <link rel="stylesheet" href="/static/css/scss.css">
-    <link rel="stylesheet" href="/static/css/AD.css">
+    <link rel="stylesheet" href="/static/css/scss.min.css">
+    <link rel="stylesheet" href="/static/css/AD.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 {% include "navbar.html" %}
 
+
+<!-- =% LANDING PAGE SECTION -->
 <section id="landingPageBannerSection">
     <div class="container">
         <div class="contentContainer">
             <div class="scrollDiv">
-                <div class="carouselContainer">
-
+                <div class="carouselContainer" id="bannerCarouselContainer">
                     <div class="items">
                         <img class="itemImage" src="/static/images/bannerImage1.jpg" alt="">
                     </div>
-
                     <div class="items">
                         <img class="itemImage" src="/static/images/bannerImage2.jpg" alt="">
                     </div>
-
                     <div class="items">
                         <img class="itemImage" src="/static/images/bannerImage3.jpg" alt="">
                     </div>
-
-
                 </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =% BEST SELLER SECTION -->
+<section id="bestSellerSection">
+    <div class="container">
+        <div class="contentContianer">
+            <h1 class="heading">Best Sellers</h1>
+            <div class="bestSellerContainer">
+                <div class="item">
+                    <img class="itemImages" src="/static/images/ArmChair.jpeg" alt="">
+                    <div class="content">
+                        <h3>Wooden White Arm chair</h3>
+                        <p>Starting from <span></span> 4,999</p>
+                    </div>
+
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/AccentChair.jpeg" alt="">
+
+                    <div class="content">
+                        <h3>Blue Accent Chair</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/SetteeSofa.jpeg" alt="">
+                    <div class="content">
+                        <h3>Printed Settee Sofa</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/HighBackSofa.jpeg" alt="">
+                    <div class="content">
+                        <h3>Plane High back Sofa</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/RollBackSofa.webp" alt="">
+                    <div class="content">
+                        <h3>Roll back Sofa</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =% TRENDING SECTION -->
+<section id="trandingSection">
+    <div class="container">
+        <div class="contentContianer">
+            <h1 class="heading">Trendings</h1>
+            <div class="bestSellerContainer">
+                <div class="item">
+                    <img class="itemImages" src="/static/images/ArmChair.jpeg" alt="">
+                    <div class="content">
+                        <h3>Wooden White Arm chair</h3>
+                        <p>Starting from <span></span> 4,999</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/AccentChair.jpeg" alt="">
+
+                    <div class="content">
+                        <h3>Blue Accent Chair</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/SetteeSofa.jpeg" alt="">
+                    <div class="content">
+                        <h3>Printed Settee Sofa</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/HighBackSofa.jpeg" alt="">
+                    <div class="content">
+                        <h3>Plane High back Sofa</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImages" src="/static/images/RollBackSofa.webp" alt="">
+                    <div class="content">
+                        <h3>Roll back Sofa</h3>
+                        <p>Starting from <span></span> 8,499</p>
+                    </div>
+                    <div class="heartDiv">
+                        <button class="AD-btn button heartButton AD-flex">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 23 21" fill="none">
+                                <path class="heartSvg" d="M11.854 2.08298L11.5 2.43598L11.146 2.08198C9.92325 0.881493 8.27591 0.21241 6.56237 0.220284C4.84883 0.228157 3.20771 0.912351 1.99604 2.12402C0.784373 3.33569 0.10018 4.97681 0.0923062 6.69035C0.0844326 8.40389 0.753516 10.0512 1.954 11.274L2.308 11.628L11.5 20.82L20.692 11.628L21.046 11.274C22.2369 10.0493 22.8979 8.40505 22.886 6.69684C22.874 4.98862 22.19 3.35378 20.9821 2.14593C19.7741 0.938072 18.1392 0.254305 16.4309 0.242525C14.7227 0.230745 13.0785 0.891898 11.854 2.08298Z" fill="none"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =% ALL CATEOGRY SECTION -->
+<section id="allCategoriesSection">
+    <div class="container">
+        <div class="contentContainer">
+            <h1 class="heading">All Categories</h1>
+            <div class="categoriesContainer">
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/armChair.jpg" alt="">
+
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+
+                    
+                </div>
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/HighBackSofa.jpeg" alt="">
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/RollBackSofa.webp" alt="">
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/AccentChair.jpeg" alt="">
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/SetteeSofa.jpeg" alt="">
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/SectionSofa.jpg" alt="">
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/RollBackSofa.webp" alt="">
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img class="categoryImage" src="/static/images/SetteeSofa.jpeg" alt="">
+                    <div class="categoryNameDiv">
+                        <p class="categoryName">Accent Chair</p>
+                    </div>
+                    <div class="categoryContent">
+                        <button class="AD-btn browsButton">Browse all products</button>
+                    </div>
+                </div>
+            </div>
+            <div class="viewMoreButtonDiv">
+                <button class="AD-btn viewMoreButton">View More</button>
+            </div>
+
+            <div class="cateogoryBackoverlay">
+
             </div>
         </div>
     </div>
